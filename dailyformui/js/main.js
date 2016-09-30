@@ -5,11 +5,11 @@ $(function () {
   var worksHtml = [];
   var workTpl = $('#work-tpl').html();
 
-  for (var i = totalNum; i > 0; i--) {
-    worksHtml.push(workTpl.replace(/\${num}/g, i));
-  }
+  // for (var i = totalNum; i > 0; i--) {
+  //   worksHtml.push(workTpl.replace(/\${num}/g, i));
+  // }
 
-  $works.append(worksHtml.join(''));
+  // $works.append(worksHtml.join(''));
 
   var lazyImg = $('.lazy').Lazy({
     scrollDirection: 'vertical',
