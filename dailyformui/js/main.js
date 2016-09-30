@@ -1,6 +1,6 @@
 /* global $ */
 $(function () {
-  var totalNum = 100;
+  var totalNum = 1;
   var $works = $('.works');
   var worksHtml = [];
   var workTpl = $('#work-tpl').html();
