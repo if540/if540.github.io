@@ -46,18 +46,18 @@
     
     <script type="text/javascript">
         $(function () {
-          var lazyImg = $('.lazy').Lazy({
-            scrollDirection: 'vertical',
-            chainable: false,
-            effect: 'fadeIn',
-            afterLoad: function (img) {
-              $(img).closest('.work').find('.loader').fadeOut(1000);
-            },
-            onError: function (img) {
-              $(img).closest('.work').hide();
-              lazyImg.update();
-            }
-          });
+            var lazyImg = $('.lazy').Lazy({
+                scrollDirection: 'vertical',
+                chainable: false,
+                effect: 'fadeIn',
+                afterLoad: function (img) {
+                $(img).closest('.work').find('.loader').fadeOut(1000);
+                },
+                onError: function (img) {
+                $(img).closest('.work').hide();
+                lazyImg.update();
+                }
+            });
         });
     </script>
 
